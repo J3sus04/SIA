@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>SIA - Instituto Tecnológico John Pascal</title>
+  <style>
+    body {
+      background: #fff;
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      background: #fff;
+      margin: 0;
+      padding: 60px 0 40px 0;
+      max-width: 90vw;
+      width: 80vw;
+      text-align: center;
+      border-radius: 2px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+    .logo-btn {
+      border: none;
+      background: none;
+      padding: 0;
+      cursor: pointer;
+      outline: none;
+    }
+    .logo {
+      width: 180px;
+      margin: 20px auto;
+      display: block;
+      transition: transform 0.2s;
+    }
+    .logo-btn:hover .logo {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #aaa;
+    }
+    .instituto {
+      margin-top: 10px;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+    .title {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">SIA</div>
+    <form action="seleccion_rol.html" method="get" style="margin:0;">
+      <button type="submit" class="logo-btn" title="Ir a selección de rol">
+        <img class="logo" src="imagenes/tec.png" alt="Logo John Pascal">
+      </button>
+    </form>
+    <div class="instituto">
+      INSTITUTO TECNOLÓGICO<br>JOHN PASCAL
+    </div>
+  </div>
+</body>
+</html>

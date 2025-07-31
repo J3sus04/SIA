@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Selecciona tu rol</title>
+  <style>
+    body {
+      background: #fff;
+      margin: 0;
+      font-family: 'Times New Roman', Times, serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .header {
+      background: #1652c1;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 0 0 0 30px;
+      height: 90px;
+      width: 100vw;
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .header img {
+      height: 65px;
+      margin-right: 30px;
+    }
+    .header-title {
+      font-size: 40px;
+      letter-spacing: 2px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .main-content {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      margin-top: 120px;
+    }
+    .roles-container {
+      background: #fff;
+      margin: 0;
+      padding: 40px 0;
+      max-width: 900px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      border-radius: 2px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    }
+    .role {
+      width: 180px;
+      height: 180px;
+      border: 1.5px solid #bbb;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: box-shadow 0.2s;
+      cursor: pointer;
+      background: #fff;
+      text-decoration: none;
+      color: inherit;
+    }
+    .role:hover {
+      box-shadow: 0 0 10px #aaa;
+    }
+    .role-icon {
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+    .role-label {
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="imagenes/tecnm.png" alt="Logo TecNM">
+    <span class="header-title">INSTITUTO TECNOLOGICO  JOHN PASCAL</span>
+  </div>
+  <div class="main-content">
+    <div class="roles-container">
+      <a class="role" href="login.html">
+        <div class="role-icon">
+          <!-- Icono de estudiante -->
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="black"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05C16.64 13.81 19 15.13 19 16.5V19h5v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        </div>
+        <div class="role-label">Estudiante</div>
+      </a>
+      <div class="role">
+        <div class="role-icon">
+          <!-- Icono de docente -->
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21v-2a4 4 0 0 1 8 0v2"/></svg>
+        </div>
+        <div class="role-label">DOCENTE</div>
+      </div>
+      <div class="role">
+        <div class="role-icon">
+          <!-- Icono de jefe de departamento -->
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a7.5 7.5 0 0 1 13 0"/><circle cx="6" cy="17" r="2"/><circle cx="18" cy="17" r="2"/></svg>
+        </div>
+        <div class="role-label">JEFE DE DEPARTAMENTO</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

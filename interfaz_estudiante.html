@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Estudiante - Ingeniería en Sistemas Computacionales</title>
+  <style>
+    body {
+      margin: 0;
+      background: #fff;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .header {
+      background: #1652c1;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      height: 90px;
+      padding-left: 20px;
+      position: relative;
+    }
+    .header img {
+      height: 65px;
+      margin-right: 30px;
+    }
+    .header-title {
+      font-size: 38px;
+      letter-spacing: 1px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .avatar {
+      position: absolute;
+      right: 110px;
+      top: 12px;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #fff;
+      border: 2px solid #eee;
+    }
+    .estudiante-img {
+      position: absolute;
+      right: 30px;
+      top: 12px;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #fff;
+      border: 2px solid #eee;
+    }
+    .menu-hamburguesa {
+      position: absolute;
+      left: 20px;
+      top: 110px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+    }
+    .menu-hamburguesa span {
+      display: block;
+      height: 4px;
+      width: 30px;
+      background: #222;
+      margin: 5px 0;
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+    .main-content {
+      margin: 40px 0 0 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 80vh;
+    }
+    .tabla-container {
+      width: 90vw;
+      max-width: 1100px;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 auto;
+      background: #fff;
+      box-shadow: 0 0 10px #eee;
+    }
+    th, td {
+      padding: 10px 8px;
+      text-align: left;
+      font-size: 16px;
+    }
+    th {
+      background: #111;
+      color: #fff;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    tr:not(:first-child) {
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="../imagenes/tecnm.png" alt="Logo TecNM">
+    <span class="header-title">Ingenieria En Sistemas Computacionales</span>
+    <img src="../imagenes/avatar.png" alt="Avatar" class="avatar">
+    <img src="../imagenes/estidiante.png" alt="Estudiante" class="estudiante-img">
+  </div>
+  <div class="menu-hamburguesa">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="main-content">
+    <div class="tabla-container">
+      <table>
+        <tr>
+          <th>Nombre del alumno</th>
+          <th>Curp</th>
+          <th>Numero de control</th>
+          <th>c a r r e r a</th>
+          <th>Dirección</th>
+          <th>Teléfono</th>
+          <th>Correo personal</th>
+        </tr>
+        <!-- Aquí se insertarán los datos desde la base de datos -->
+      </table>
+    </div>
+    <div class="tabla-container">
+      <table>
+        <tr>
+          <th>Escuela de procedencia</th>
+          <th>Periodo de ingreso</th>
+          <th>Periodo actual o ultimo</th>
+          <th>Situación</th>
+          <th>Periodos validados</th>
+        </tr>
+        <!-- Aquí se insertarán los datos desde la base de datos -->
+      </table>
+    </div>
+  </div>
+</body>
+</html>
